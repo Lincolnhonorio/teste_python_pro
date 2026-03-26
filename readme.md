@@ -1,16 +1,18 @@
-📝 Gerenciador de Tarefas API (Flask) - Projeto Python Pro
-Este projeto consiste em uma API RESTful simplificada desenvolvida com o micro-framework Flask. O objetivo é gerenciar o fluxo de atividades de um desenvolvedor, permitindo a listagem de tarefas factuais e a adição de novos itens à lista de controle.
+📝 Gerenciador de Tarefas API (Flask) - Projeto Python Pro:
 
-🚀 Funcionalidades
-O projeto atende aos requisitos de manipulação de dados via web utilizando funções integradas do Python e da biblioteca Flask:
+Este projeto é uma API simples de gerenciamento de tarefas desenvolvida com Flask.  
+A ideia foi praticar a criação de rotas e operações básicas de um CRUD usando Python.
 
-Rota de Boas-vindas (/): Retorna uma mensagem de recepção confirmando que o servidor está ativo.
+🚀 Funcionalidades:
 
-Listagem de Tarefas (/tarefas - GET): Exibe todas as tarefas atuais (como "Ler documentação", "Iniciar projeto") em formato JSON.
+Rota inicial (/) para verificar se a API está rodando
+Listagem de tarefas (GET /tarefas)
+Criação de tarefas (POST /tarefas)
+Atualização de tarefas (PUT /tarefas/<id>)
+Remoção de tarefas (DELETE /tarefas/<id>)
 
-Criação de Tarefas (/tarefas - POST): Permite o envio de novos objetos JSON para serem anexados à lista de tarefas do servidor.
+🛠️ Tecnologias Utilizadas:
 
-🛠️ Tecnologias Utilizadas
 Linguagem: Python 3.x
 
 Framework: Flask 3.1.0
@@ -19,39 +21,27 @@ Ambiente de Desenvolvimento: VS Code
 
 Formato de Dados: JSON (JavaScript Object Notation)
 
-📦 Como Instalar e Rodar
-Siga os passos abaixo para executar o projeto em sua máquina local:
+📦 Como Instalar e Rodar:
 
-Clone ou baixe este repositório.
+1. Clone o repositório
+2. Acesse a pasta do projeto
+3. Instale as dependências:
 
-Abra a pasta do projeto no VS Code.
-
-Certifique-se de ter o Python instalado. Recomenda-se o uso de um ambiente virtual (venv).
-
-Instale as dependências necessárias utilizando o arquivo requirements.txt:
-
-Bash
 pip install -r requirements.txt
-Execute o arquivo principal:
 
-Bash
+4. Execute o projeto:
+
 python main.py
-O servidor iniciará em http://127.0.0.1:5000/.
 
-📁 Estrutura do Projeto
-main.py: Código-fonte principal contendo a lógica das rotas e inicialização do Flask.
+A API estará disponível em:
+http://127.0.0.1:5000/
 
-requirements.txt: Lista de dependências e versões para garantir a reprodutibilidade do projeto.
+📁 Estrutura do Projeto:
 
-README.md: Documentação completa do projeto (este arquivo).
+- main.py → código principal da API
+- requirements.txt → dependências do projeto
+- README.md → documentação
 
-👨‍💻 Critérios Técnicos Atendidos
-Utilização de funções integradas (decorators @app.route, jsonify, request).
+👨‍💻 Sobre
 
-Inexistência de classes obrigatórias, mantendo o código leve e funcional.
-
-Tratamento de métodos HTTP distintos (GET e POST) na mesma rota.
-
-Configuração de Modo Debug para facilitar ajustes em tempo real.
-
-Desenvolvido por Lincoln Honorio – Instrutor de Programação Python | Algoritmos e Pensamento Computacional.
+Projeto desenvolvido por Lincoln Honorio como prática de Flask e construção de APIs REST(Para Teste Python Pro).
